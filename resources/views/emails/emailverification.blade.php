@@ -15,7 +15,7 @@
     <body>
         <h2>Thanks for creating an account. Verify your Email.</h2>
         <div style="text-align:center;">
-            <a class="buttonstyle" href="{{ URL::to('register/verify/' . $confirmation_code ) }}" title="Confirmation Link" target="_blank">Activation Code</a>
+            <a class="buttonstyle" href="{{ URL::to('/verify/' . $confirmation_code ) }}" title="Confirmation Link" target="_blank">Activation Code</a>
         </div>
     </body>
 </html>

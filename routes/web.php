@@ -21,7 +21,7 @@ Route::POST('/login', 'loginController@check' );
 
 Route::get('/logout','MainController@logout');
 
-Route::get('/register/verify/{confirmationCode}', [
+Route::get('/verify/{confirmationCode}', [
     'as' => 'confirmation_path',
     'uses' => 'RegistrationController@confirm'
 ]);
